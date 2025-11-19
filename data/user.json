@@ -1,0 +1,19 @@
+{
+  "version": "0.6.1",
+  "profile": {
+    "name": "New User",
+    "avatar": null,
+    "badges": {
+      "welcome": "locked"
+    },
+    "profileSetupComplete": false
+  },
+  "permissions": {
+    "camera": false,
+    "location": false
+  },
+  "progress": {
+    "onboardingComplete": false,
+    "progressFlags": {}
+  }
+}

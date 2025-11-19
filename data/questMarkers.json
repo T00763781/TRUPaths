@@ -1,0 +1,56 @@
+{
+  "version": "0.6.1",
+  "updated": "2025-11-18",
+  "markers": [
+    {
+      "id": "welcome_centre",
+      "name": "Welcome Centre",
+      "description": "Start point of the TRU Path. Scan the QR to begin.",
+      "key": "QR_WELCOME_001",
+      "lat": 50.67410,
+      "lng": -120.36480,
+      "icon": "default",
+      "active": true
+    },
+    {
+      "id": "library_main",
+      "name": "Main Library",
+      "description": "Find resources, study spaces, and academic support.",
+      "key": "QR_LIBRARY_001",
+      "lat": 50.67385,
+      "lng": -120.36610,
+      "icon": "default",
+      "active": true
+    },
+    {
+      "id": "ae_building",
+      "name": "Arts & Education",
+      "description": "Home of interdisciplinary learning and student classrooms.",
+      "key": "QR_AE_001",
+      "lat": 50.67340,
+      "lng": -120.36530,
+      "icon": "default",
+      "active": true
+    },
+    {
+      "id": "hol_building",
+      "name": "Old Main",
+      "description": "One of TRU’s primary academic buildings.",
+      "key": "QR_OM_001",
+      "lat": 50.67310,
+      "lng": -120.36710,
+      "icon": "default",
+      "active": true
+    },
+    {
+      "id": "wolfie_den",
+      "name": "Wolfie Den",
+      "description": "A playful future hub for TRU Wolf Pack content.",
+      "key": "QR_WOLFIE_001",
+      "lat": 50.67430,
+      "lng": -120.36550,
+      "icon": "wolf",
+      "active": false
+    }
+  ]
+}

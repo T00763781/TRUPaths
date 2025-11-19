@@ -1,0 +1,144 @@
+/* styles/base.css — v0.6.1 */
+/* AUDIT: root variables */
+:root {
+    /* TRU palette */
+    --tru-blue: #003e51;
+    --tru-teal: #00b0b9;
+    --tru-sage: #bad1ba;
+    --tru-cloud: #e3ecef;
+    --tru-yellow: #ffcd00;
+
+    /* Text */
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+
+    /* Spacing scale */
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+
+    /* Radius scale */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    /* Animation */
+    --fade-duration: 300ms;
+    --slide-duration: 350ms;
+}
+
+/* AUDIT: reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background: var(--tru-cloud);
+    color: var(--text-dark);
+}
+
+/* AUDIT: scroll lock for app container */
+body.noscroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+/* AUDIT: app root */
+#app-root {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* AUDIT: shared typography */
+.heading-lg {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--tru-blue);
+}
+
+.heading-md {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--tru-blue);
+}
+
+.text-body {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* AUDIT: utilities */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.rounded {
+    border-radius: var(--radius-md);
+}
+
+.shadow {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.fade-in {
+    animation: fadeIn var(--fade-duration) ease forwards;
+}
+
+.slide-up {
+    animation: slideUp var(--slide-duration) ease forwards;
+}
+
+/* AUDIT: animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to   { transform: translateY(0);   opacity: 1; }
+}
+
+/* AUDIT: buttons */
+.btn {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--tru-blue);
+    color: white;
+    border-radius: var(--radius-md);
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background: var(--tru-teal);
+}
+
+/* AUDIT: images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* REPLACE: add more utility classes as screens evolve */

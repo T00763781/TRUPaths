@@ -1,0 +1,204 @@
+/* styles/components.css — v0.6.1 */
+
+/* AUDIT: menu bar */
+.menu-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 68px;
+    width: 100%;
+    background: var(--tru-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    z-index: 999;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+    opacity: 0.85;
+}
+
+.menu-item img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+}
+
+.menu-item.active {
+    opacity: 1;
+    font-weight: 600;
+}
+
+/* AUDIT: top bar / header */
+.header {
+    width: 100%;
+    height: 56px;
+    background: var(--tru-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 var(--space-md);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.header img.back-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: var(--space-sm);
+}
+
+/* AUDIT: card */
+.card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    margin: var(--space-md);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--tru-blue);
+    margin-bottom: var(--space-sm);
+}
+
+/* AUDIT: badge slot */
+.badge-slot {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--tru-cloud);
+    border: 2px dashed var(--tru-sage);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* AUDIT: profile avatar */
+.profile-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 4px white, 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* AUDIT: camera frame */
+.camera-frame {
+    width: 100%;
+    height: calc(100% - 68px);
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.camera-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 60px solid rgba(0,0,0,0.35);
+    border-radius: var(--radius-lg);
+    pointer-events: none;
+}
+
+.camera-instructions {
+    position: absolute;
+    bottom: 12%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+/* AUDIT: splash loader container */
+.splash-container {
+    width: 100%;
+    height: 100%;
+    background: var(--tru-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-container img {
+    width: 240px;
+    height: auto;
+}
+
+/* AUDIT: welcome hero section */
+.welcome-hero {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: var(--radius-lg);
+    border-bottom-right-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
+}
+
+/* AUDIT: speech bubble */
+.speech-bubble {
+    background: white;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 24px;
+    border-width: 12px 12px 0 12px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+/* AUDIT: list groups */
+.list-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin: var(--space-md);
+}
+
+.list-item {
+    background: white;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item .arrow {
+    width: 18px;
+    opacity: 0.5;
+}
+
+/* REPLACE: add Wolfie “Den Guides” UI components in v1a */
